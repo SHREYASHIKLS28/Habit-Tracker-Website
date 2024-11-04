@@ -1,0 +1,77 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; 
+    color: #333; 
+}
+header {
+    background-color: #4CAF50; 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #c7f0c7; 
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #4CAF50; 
+}
+
+.mission-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+
+.offer-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.offer-section ul li {
+    margin-bottom: 10px;
+}
+
+.offer-section ul li strong {
+    font-weight: bold;
+}
+
+.join-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+}

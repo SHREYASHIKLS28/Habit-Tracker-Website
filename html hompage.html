@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devaice-width, initial-scale=1.0">
+    <title>Your Awesome Habit Tracker</title>
+    <link rel="stylesheet" href="css hompage.css"> 
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Awesome Habit Tracker!</h1>
+        <nav>
+            <ul>
+                <li><a href="html hompage.html">Back To Roots</a></li>
+                <li><a href="#" onclick="track()">Start Tracking</a></li>
+                <li><a href="progress_html.html">See Progress</a></li>
+                <li><a href="#" onclick="getInspired()">Get Inspired</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="help.html">Help</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="plant.jpg" alt="Image Description">
+        </div>
+        <div class="homepage-content">
+            <div class="plant"></div> 
+            <h2 id="he">Hey there, Champion!</h2>
+            <p>Congrats on taking the first step toward a more awesome you! Our Habit Tracker is here to make building healthy habits a breeze.</p>
+            <h2 id="she">Features That Rock</h2>
+            <p>
+                Track your daily wins like a boss!<br>
+                Watch your progress soar high like a superhero!<br>
+                Stay motivated with a sprinkle of positivity!<br>
+            </p>
+            <h2>Ready to Dive In?</h2>
+            <p>Let's start crushing those goals together! Click the button below to begin your epic habit-building journey.</p>
+            <div id="newsletter-signup">
+                <h3>Sign up for our super cool newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="button" onclick="getInspired()">Get Inspired</button>
+                </form>
+            </div>
+            <h2>Need a Boost?</h2>
+            <p>We're here for you! Feel free to reach out anytime for a high-five, some virtual hugs, or just to say hello.</p>
+            
+            <div class="table-cont">
+            <table border="1">
+                <tr>
+                    <td>Contact Method</td>
+                    <td>Details</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>contact@habittracker.com</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>+1234567890</td>
+                </tr>
+            </table>
+            </div>
+
+            <div id="login-form">
+                <fieldset>
+                    <legend>Login</legend>
+                    <form action="#" method="post">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="button" onclick="login()">Login</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <script src="js homepage.js"></script>
+    </footer>
+</body>
+</html>

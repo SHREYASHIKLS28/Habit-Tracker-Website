@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Your Awesome Habit Tracker 🌟</title>
+    <link rel="stylesheet" href="tracker css.css"> 
+</head>
+<body>
+    <header>
+        <h1>Hey, Let's Crush Those Habits Together!</h1>
+        <nav>
+            <ul>
+                <li><a href="html hompage.html">Back To Roots</a></li>
+                <li><a href="tracker html.html">Start Tracking</a></li>
+                <li><a href="progress html.html">See Progress</a></li>
+                <li><a href="motivational_messages.html">Get Inspired</a></li>
+                <li><a href="about.html">About</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="help.html">Help</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="habit-tracker-content">
+            <h2>Ready to Track Your Daily Wins?</h2>
+            <div class="image-container">
+                <img src="first.jpeg" alt="First Image" class="first-image">
+                <img src="second.jpg" alt="Second Image" class="second-image">
+                
+            </div>
+            <form id="habit-form" action="#" method="post">
+                <label for="habit-name">What Habit Are You Rocking Today?</label>
+                <input type="text" id="habit-name" name="habit-name" placeholder="Enter your awesome habit" required><br>
+                
+                <label>How Often Did You Do It?</label><br>
+                <input type="checkbox" id="daily" name="habit-frequency" value="daily" >
+                <label for="daily">Daily</label>
+                <input type="checkbox" id="weekly" name="habit-frequency" value="weekly">
+                <label for="weekly">Weekly</label>
+                <input type="checkbox" id="monthly" name="habit-frequency" value="monthly">
+                <label for="monthly">Monthly</label><br>
+
+        
+                <label>Was It Easy?</label><br>
+                <input type="radio" id="easy" name="habit-difficulty" value="easy" required>
+                <label for="easy">Easy</label>
+                <input type="radio" id="medium" name="habit-difficulty" value="medium" required>
+                <label for="medium">Medium</label>
+                <input type="radio" id="hard" name="habit-difficulty" value="hard" required>
+                <label for="hard">Hard</label><br>
+
+            
+                <label for="habit-type">Select Habit Type:</label>
+                <select id="habit-type" name="habit-type">
+                    <option value="physical">Physical Activity</option>
+                    <option value="mental">Mental Activity</option>
+                    <option value="creative">Creative Activity</option>
+                    <option value="social">Social Activity</option>
+                </select><br>
+
+                <label for="habit-count">How Many Times Did You Smash It?</label>
+                <input type="number" id="habit-count" name="habit-count" placeholder="Enter the count" required><br>
+                
+
+                <button type="button" onclick="resetForm()">Reset</button> 
+                <button type="button" id="boom-button">Boom! Track It!</button>
+
+            </form>
+            <div id="habit-chart">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Awesome Habit Tracker</p>
+    </footer>
+    <script src="tracker js.js"></script>
+</body>
+</html>

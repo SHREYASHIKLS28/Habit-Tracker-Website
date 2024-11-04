@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Your Progress - Your Journey to Success</title>
+    <link rel="stylesheet" href="progress css.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Your Journey to Success</h1>
+        <nav>
+            <ul>
+                <li><a href="html hompage.html">Back to Roots</a></li>
+                <li><a href="tracker html.html">Start Tracking</a></li>
+                <li><a href="progress html.html">See Progress</a></li>
+                <li><a href="motivational messgaes.html">Get Inspired</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="progress">
+            <h2>See Your Progress</h2>
+            <p>Celebrate every step forward! Your progress is a testament to your dedication and hard work.</p>
+        </section>
+    </main>
+    <canvas id="habit-chart"></canvas>
+    <button onclick="recordProgress()">Record Progress</button> 
+    <script src="script.js"></script>
+
+    <main>
+        <section class="tips-section">
+            <h2>Embrace Growth and Improvement</h2>
+            <p>Here are some uplifting tips to guide you along your journey:</p>
+            <ul>
+                <li>Believe in yourself and your abilities.</li>
+                <li>Focus on progress, not perfection.</li>
+                <li>Stay consistent and resilient.</li>
+                <li>Celebrate small victories and milestones.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+    // Add this script at the end of the <body> section of your HTML file
+        <script>
+            
+            var habitData = [];
+            var ctx = document.getElementById('habit-chart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'], 
+                    datasets: [{
+                        label: 'Habit Progress', 
+                        data: habitData, 
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)', 
+                        borderColor: 'rgba(75, 192, 192, 1)', 
+                        borderWidth: 1 
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true 
+                        }
+                    }
+                }
+            });
+        </script>
+        
+</body>
+
+</html>
